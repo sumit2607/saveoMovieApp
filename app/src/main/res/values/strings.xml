@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Movie MVVM</string>
+    <string name="summaryCapital" />
+    <string name="summary" />
+    <string name="book_now" />
+    <string name="movies" />
+    <string name="the_hateful_eight" />
+    <string name="sample_text_runtime" />
+    <string name="sample_genre_one" />
+    <string name="sample_genre_two" />
+    <string name="n_a" />
+    <string name="sample_language" />
+</resources>

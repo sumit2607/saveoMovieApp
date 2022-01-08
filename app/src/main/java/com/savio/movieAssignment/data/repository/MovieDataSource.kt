@@ -4,13 +4,13 @@ import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.paging.PageKeyedDataSource
 import com.savio.movieAssignment.data.movieApi.FIRST_PAGE
-import com.savio.movieAssignment.data.movieApi.TheMovieDBInterface
-import com.savio.movieAssignment.data.model.Movie
+import com.savio.movieAssignment.data.movieApi.apiService
+import com.savio.movieAssignment.model.Movie
 import com.savio.movieAssignment.networkState.NetworkState
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 
-class MovieDataSource (private val apiService : TheMovieDBInterface, private val compositeDisposable: CompositeDisposable)
+class MovieDataSource (private val apiService : apiService, private val compositeDisposable: CompositeDisposable)
     : PageKeyedDataSource<Int, Movie>(){
 
     private var page = FIRST_PAGE
@@ -66,3 +66,4 @@ class MovieDataSource (private val apiService : TheMovieDBInterface, private val
 
     }
 }
+////code by sumit rai//

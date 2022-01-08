@@ -1,13 +1,13 @@
 package com.savio.movieAssignment.ui.movieDetails
 
 import androidx.lifecycle.LiveData
-import com.savio.movieAssignment.data.movieApi.TheMovieDBInterface
+import com.savio.movieAssignment.data.movieApi.apiService
 import com.savio.movieAssignment.data.repository.MovieDetailsNetworkDataSource
 import com.savio.movieAssignment.networkState.NetworkState
-import com.savio.movieAssignment.data.model.MovieDetails
+import com.savio.movieAssignment.model.MovieDetails
 import io.reactivex.disposables.CompositeDisposable
 
-class MovieDetailsRepository (private val apiService : TheMovieDBInterface) {
+class MovieDetailsRepository (private val apiService : apiService) {
 
     lateinit var movieDetailsNetworkDataSource: MovieDetailsNetworkDataSource
 
@@ -27,3 +27,5 @@ class MovieDetailsRepository (private val apiService : TheMovieDBInterface) {
 
 
 }
+
+//code by sumit rai

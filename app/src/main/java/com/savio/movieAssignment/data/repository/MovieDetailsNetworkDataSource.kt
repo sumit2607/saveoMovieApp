@@ -3,13 +3,13 @@ package com.savio.movieAssignment.data.repository
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.savio.movieAssignment.data.movieApi.TheMovieDBInterface
-import com.savio.movieAssignment.data.model.MovieDetails
+import com.savio.movieAssignment.data.movieApi.apiService
+import com.savio.movieAssignment.model.MovieDetails
 import com.savio.movieAssignment.networkState.NetworkState
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 
-class MovieDetailsNetworkDataSource (private val apiService : TheMovieDBInterface, private val compositeDisposable: CompositeDisposable) {
+class MovieDetailsNetworkDataSource (private val apiService : apiService, private val compositeDisposable: CompositeDisposable) {
 
     private val _networkState  = MutableLiveData<NetworkState>()
     val networkState: LiveData<NetworkState>
@@ -48,3 +48,4 @@ class MovieDetailsNetworkDataSource (private val apiService : TheMovieDBInterfac
 
     }
 }
+////code by sumit rai//

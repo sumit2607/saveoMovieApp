@@ -1,4 +1,4 @@
-package com.savio.movieAssignment.data.model
+package com.savio.movieAssignment.model
 
 
 import com.google.gson.annotations.SerializedName

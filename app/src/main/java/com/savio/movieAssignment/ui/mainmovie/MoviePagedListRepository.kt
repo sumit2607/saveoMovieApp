@@ -5,14 +5,14 @@ import androidx.lifecycle.Transformations
 import androidx.paging.LivePagedListBuilder
 import androidx.paging.PagedList
 import com.savio.movieAssignment.data.movieApi.POST_PER_PAGE
-import com.savio.movieAssignment.data.movieApi.TheMovieDBInterface
+import com.savio.movieAssignment.data.movieApi.apiService
 import com.savio.movieAssignment.data.repository.MovieDataSource
 import com.savio.movieAssignment.data.repository.MovieDataSourceFactory
 import com.savio.movieAssignment.networkState.NetworkState
-import com.savio.movieAssignment.data.model.Movie
+import com.savio.movieAssignment.model.Movie
 import io.reactivex.disposables.CompositeDisposable
 
-class MoviePagedListRepository (private val apiService : TheMovieDBInterface) {
+class MoviePagedListRepository (private val apiService : apiService) {
 
     lateinit var moviePagedList: LiveData<PagedList<Movie>>
     lateinit var moviesDataSourceFactory: MovieDataSourceFactory
@@ -35,3 +35,4 @@ class MoviePagedListRepository (private val apiService : TheMovieDBInterface) {
             moviesDataSourceFactory.moviesLiveDataSource, MovieDataSource::networkState)
     }
 }
+////code by sumit rai//

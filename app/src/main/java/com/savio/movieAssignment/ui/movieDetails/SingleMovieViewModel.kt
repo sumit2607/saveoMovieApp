@@ -3,7 +3,7 @@ package com.savio.movieAssignment.ui.movieDetails
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import com.savio.movieAssignment.networkState.NetworkState
-import com.savio.movieAssignment.data.model.MovieDetails
+import com.savio.movieAssignment.model.MovieDetails
 import io.reactivex.disposables.CompositeDisposable
 
 class SingleMovieViewModel (private val movieRepository : MovieDetailsRepository, movieId: Int)  : ViewModel() {
@@ -26,3 +26,4 @@ class SingleMovieViewModel (private val movieRepository : MovieDetailsRepository
 
 
 }
+//code by sumit rai

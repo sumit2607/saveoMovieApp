@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.paging.PagedList
 import com.savio.movieAssignment.networkState.NetworkState
-import com.savio.movieAssignment.data.model.Movie
+import com.savio.movieAssignment.model.Movie
 import io.reactivex.disposables.CompositeDisposable
 
 class MainActivityViewModel(private val movieRepository : MoviePagedListRepository) : ViewModel() {
@@ -30,3 +30,4 @@ class MainActivityViewModel(private val movieRepository : MoviePagedListReposito
     }
 
 }
+//code by sumit rai

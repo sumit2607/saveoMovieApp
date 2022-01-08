@@ -7,22 +7,18 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
-const val API_KEY = "3aa594abde32277be6ee3c7c41f16141"
+const val API_KEY = "3aa594abde32277be6ee3c7c41f16141" // my tmdb api
 const val BASE_URL = "https://api.themoviedb.org/3/"
-
 const val POSTER_BASE_URL = "https://image.tmdb.org/t/p/w342"
-
 const val FIRST_PAGE = 1
 const val POST_PER_PAGE = 20
 
 
 object TheMovieDBClient {
 
-    fun getClient(): TheMovieDBInterface {
+    fun getClient(): apiService {
 
         val requestInterceptor = Interceptor { chain ->
-
-
             val url = chain.request()
                 .url()
                 .newBuilder()
@@ -48,7 +44,8 @@ object TheMovieDBClient {
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-            .create(TheMovieDBInterface::class.java)
+            .create(apiService::class.java)
 
     }
 }
+//code by sumit rai//

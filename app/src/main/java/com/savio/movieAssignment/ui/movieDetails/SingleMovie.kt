@@ -10,8 +10,8 @@ import com.bumptech.glide.Glide
 import com.savio.movieAssignment.R
 import com.savio.movieAssignment.data.movieApi.POSTER_BASE_URL
 import com.savio.movieAssignment.data.movieApi.TheMovieDBClient
-import com.savio.movieAssignment.data.movieApi.TheMovieDBInterface
-import com.savio.movieAssignment.data.model.MovieDetails
+import com.savio.movieAssignment.data.movieApi.apiService
+import com.savio.movieAssignment.model.MovieDetails
 import kotlinx.android.synthetic.main.activity_single_movie.*
 import java.text.NumberFormat
 import java.util.*
@@ -28,7 +28,7 @@ class SingleMovie : AppCompatActivity() {
 
         val movieId: Int = intent.getIntExtra("id",1)
 
-        val apiService : TheMovieDBInterface = TheMovieDBClient.getClient()
+        val apiService : apiService = TheMovieDBClient.getClient()
         movieRepository = MovieDetailsRepository(apiService)
 
         viewModel = getViewModel(movieId)
@@ -75,3 +75,4 @@ class SingleMovie : AppCompatActivity() {
         })[SingleMovieViewModel::class.java]
     }
 }
+//code by sumit rai

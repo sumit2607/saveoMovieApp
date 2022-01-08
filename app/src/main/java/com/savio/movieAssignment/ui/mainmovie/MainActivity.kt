@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import com.savio.movieAssignment.R
 import com.savio.movieAssignment.data.movieApi.TheMovieDBClient
-import com.savio.movieAssignment.data.movieApi.TheMovieDBInterface
+import com.savio.movieAssignment.data.movieApi.apiService
 import com.savio.movieAssignment.networkState.NetworkState
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val apiService : TheMovieDBInterface = TheMovieDBClient.getClient()
+        val apiService : apiService = TheMovieDBClient.getClient()
 
         movieRepository = MoviePagedListRepository(apiService)
 
@@ -73,3 +73,4 @@ class MainActivity : AppCompatActivity() {
     }
 
 }
+//code by sumit rai

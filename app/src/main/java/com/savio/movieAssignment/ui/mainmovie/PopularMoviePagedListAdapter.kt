@@ -12,7 +12,7 @@ import com.bumptech.glide.Glide
 import com.savio.movieAssignment.R
 import com.savio.movieAssignment.data.movieApi.POSTER_BASE_URL
 import com.savio.movieAssignment.networkState.NetworkState
-import com.savio.movieAssignment.data.model.Movie
+import com.savio.movieAssignment.model.Movie
 import com.savio.movieAssignment.ui.movieDetails.SingleMovie
 import kotlinx.android.synthetic.main.movie_list_item.view.*
 import kotlinx.android.synthetic.main.network_state_item.view.*
@@ -148,3 +148,4 @@ class PopularMoviePagedListAdapter(public val context: Context) : PagedListAdapt
 
 
 }
+//code by sumit rai

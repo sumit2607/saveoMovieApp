@@ -2,11 +2,11 @@ package com.savio.movieAssignment.data.repository
 
 import androidx.lifecycle.MutableLiveData
 import androidx.paging.DataSource
-import com.savio.movieAssignment.data.movieApi.TheMovieDBInterface
-import com.savio.movieAssignment.data.model.Movie
+import com.savio.movieAssignment.data.movieApi.apiService
+import com.savio.movieAssignment.model.Movie
 import io.reactivex.disposables.CompositeDisposable
 
-class MovieDataSourceFactory (private val apiService : TheMovieDBInterface, private val compositeDisposable: CompositeDisposable)
+class MovieDataSourceFactory (private val apiService : apiService, private val compositeDisposable: CompositeDisposable)
     : DataSource.Factory<Int, Movie>() {
 
     val moviesLiveDataSource =  MutableLiveData<MovieDataSource>()
@@ -18,3 +18,5 @@ class MovieDataSourceFactory (private val apiService : TheMovieDBInterface, priv
         return movieDataSource
     }
 }
+
+////code by sumit rai//

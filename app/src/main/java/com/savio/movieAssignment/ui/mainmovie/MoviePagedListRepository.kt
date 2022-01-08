@@ -6,8 +6,8 @@ import androidx.paging.LivePagedListBuilder
 import androidx.paging.PagedList
 import com.savio.movieAssignment.data.movieApi.POST_PER_PAGE
 import com.savio.movieAssignment.data.movieApi.apiService
-import com.savio.movieAssignment.data.repository.MovieDataSource
-import com.savio.movieAssignment.data.repository.MovieDataSourceFactory
+import com.savio.movieAssignment.data.repo.MovieDataSource
+import com.savio.movieAssignment.data.repo.MovieDataSourceFactory
 import com.savio.movieAssignment.networkState.NetworkState
 import com.savio.movieAssignment.model.Movie
 import io.reactivex.disposables.CompositeDisposable

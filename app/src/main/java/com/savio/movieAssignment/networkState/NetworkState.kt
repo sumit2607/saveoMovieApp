@@ -4,13 +4,14 @@ enum class Status {
     RUNNING,
     SUCCESS,
     FAILED
+    //for showing Result we are using enum
 
 }
 
 class NetworkState(val status: Status, val msg: String) {
 
-    companion object {
-
+    companion object {//for static
+        //
         val LOADED: NetworkState
         val LOADING: NetworkState
         val ERROR: NetworkState

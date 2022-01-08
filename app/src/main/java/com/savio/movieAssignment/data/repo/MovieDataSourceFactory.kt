@@ -1,4 +1,4 @@
-package com.savio.movieAssignment.data.repository
+package com.savio.movieAssignment.data.repo
 
 import androidx.lifecycle.MutableLiveData
 import androidx.paging.DataSource

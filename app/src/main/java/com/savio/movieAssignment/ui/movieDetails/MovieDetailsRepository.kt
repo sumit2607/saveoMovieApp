@@ -2,7 +2,7 @@ package com.savio.movieAssignment.ui.movieDetails
 
 import androidx.lifecycle.LiveData
 import com.savio.movieAssignment.data.movieApi.apiService
-import com.savio.movieAssignment.data.repository.MovieDetailsNetworkDataSource
+import com.savio.movieAssignment.data.repo.MovieDetailsNetworkDataSource
 import com.savio.movieAssignment.networkState.NetworkState
 import com.savio.movieAssignment.model.MovieDetails
 import io.reactivex.disposables.CompositeDisposable
